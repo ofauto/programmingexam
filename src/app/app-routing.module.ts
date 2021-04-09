@@ -10,13 +10,12 @@ const routes: Routes = [{
   component: LayouthomeComponent,
   // canActivate: [AuthGuard],
   children: [
-    { path: '', component: HomeComponent},
+    { path: '', component: SearchComponent},
     { path: 'home', component: HomeComponent},
     { path: 'search', component: SearchComponent},
     { path: 'searchdetail/:Id', component: SearchdetailComponent},
   ]
 },
-
   {
     path: '*', redirectTo: ''
   },
